@@ -5,15 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Video Landing</title>
 <style>
-  body {
+  body, html {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    height: 100%;
     background-color: #1a1a1a;
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
   }
 
   #overlay {
@@ -63,10 +64,14 @@
     background-color: #555;
   }
 
-  video {
-    max-width: 90%;
-    max-height: 90%;
+  #myVideo {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     display: none;
+    pointer-events: none; /* disable klik */
   }
 </style>
 </head>
@@ -80,7 +85,7 @@
   </div>
 </div>
 
-<video id="myVideo" controls>
+<video id="myVideo" autoplay muted>
   <source src="https://raw.githubusercontent.com/Kyys435/UHD-Kyss/main/Proyek%20Baru%208%20[6F852ED].mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -95,7 +100,6 @@ function showVideo() {
 
 function noAction() {
   alert('Anda memilih Tidak!');
-  // atau bisa redirect: window.location.href = "https://example.com";
 }
 </script>
 
