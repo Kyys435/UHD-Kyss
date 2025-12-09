@@ -89,7 +89,7 @@ button{
 button:hover{transform:scale(1.1); box-shadow:0 8px 25px rgba(255,107,129,0.6);}
 button:active{transform:scale(0.95);}
 #surpriseBtn{opacity:0; transform:scale(0); transition: all 0.5s ease;}
-#typingText::after{content:"|"; display:inline-block; animation: blink 1s infinite;}
+#typingText::after{content:"𝗜"; display:inline-block; animation: blink 1s infinite;}
 @keyframes blink{0%,50%,100%{opacity:1;}25%,75%{opacity:0;}}
 .hidden{display:none;}
 </style>
@@ -107,7 +107,7 @@ button:active{transform:scale(0.95);}
 </div>
 
 <div class="container hidden" id="mainContent">
-    <h1>Selamat Ulang Tahun, Sayang</h1>
+    <h1>𝗨𝗻𝘁𝘂𝗸 𝗞𝗮𝗺𝘂 𝗦𝗮𝘆𝗮𝗻𝗴</h1>
     <div class="text-container"><div id="typingText"></div></div>
     <button id="surpriseBtn">Next!</button>
 </div>
@@ -131,14 +131,12 @@ const kyysBtn=document.getElementById('kyysBtn');
 const kyezBtn=document.getElementById('kyezBtn');
 const mainContent=document.getElementById('mainContent');
 const surpriseBtn=document.getElementById('surpriseBtn');
-
 kyysBtn.addEventListener('click',()=>{
     login.classList.add('hidden');
     mainContent.classList.remove('hidden');
     mainContent.classList.add('show');
     startTyping();
 });
-kyezBtn.addEventListener('click',()=>{alert("Salah Woii");});
 
 // Firework canvas
 const canvas=document.getElementById('fireworkCanvas');
@@ -162,13 +160,18 @@ animate();
 
 // Typing long text
 const textArr=[
-"Makasih ya sayang, karena selalu ada untukku, menemani hari-hariku dengan kesabaran dan cinta.",
-"Aku bersyukur setiap saat bisa bersama kamu, yang selalu setia, baik, dan penuh perhatian.",
-"Kamu membuatku merasa aman dan dicintai setiap hari.",
-"Terima kasih sudah sabar mendengarkan keluh kesahku, selalu memberi semangat saat aku lelah, dan membuatku tersenyum bahkan di hari-hari yang sulit.",
-"Aku berharap kita bisa terus saling mendukung, tertawa bersama, dan menciptakan kenangan indah yang tak terlupakan.",
-"Semoga ulang tahunmu ini penuh kebahagiaan, tawa, cinta, dan semua hal baik yang pantas kamu dapatkan.",
-"Aku sayang kamu lebih dari kata-kata bisa jelaskan, dan aku bersyukur bisa merayakan momen spesial ini bersamamu."
+"Makasihhh yaaa sayaaang udahh samaaaa akuuu terusss , akuuu bahagiaaa bangett samaa kamuuu",
+"hehe udahhh enammm bulann yaaa kitaaa pacarannyaa hehe , semoga langgeng yaa sayaang akuuu",
+"mauuu jadiin kamuuu istrii akuu yangg 😁😋 , kiraa² kamuuu mauuu enggaaa yaaa , semoga ya kita",
+"nikahhh yaaa sayangg , akuuu tuhh udahh nyamann bangett lohh sayangg samaa kamuu ^^ , pliss yaa",
+"jangann pergii , ndaaa kerasaa yaa 22 hariii lagii tahunn baruuu , btwww kamuu nyamann ndaa yangg? ",
+"samaaa akuu yangg sukaaa offf samaa bedaaa darii cowokk lainn yangg?? , jujurr mee ndsaa mauu kamuu",
+"bosenn samaa mee hehe , mee gamauuu yangg kehilangan kamu , kamuu ituu udahh bikinn harii harii",
+"akuuu ituu ndaaa sepii lohh yangg , apalaagii ortuu kamuu udahh tauu kita pacaran eh se keluarga sih",
+"plisss yaaa sayaanggg jangann pergii darii akuuu , kaloo adaa yangg kamuu ndaaa sukaaa darii mee",
+"kamuuu aturr ajaaa akuuu , samaa sehattt sehatt yaaaa sayaanggg hehe ^^",
+"anjayyyy , cipokannn yoooo 😋\n",
+"𝗔𝗡𝗝𝗝𝗜𝗡𝗚𝗚𝗚 𝗚𝗔𝗥𝗜𝗡𝗚𝗚 𝗠𝗢𝗡𝗬𝗘𝗧𝗧 𝗕𝗘𝗧𝗧 "
 ];
 const typingText=document.getElementById('typingText');
 let lineIndex=0, charIndex=0;
@@ -199,7 +202,7 @@ function startTyping(){
 // Next button click
 surpriseBtn.addEventListener('click',()=>{
     // Banyak fireworks ke atas
-    for(let i=0;i<150;i++){
+    for(let i=0;i<60;i++){
         let startX=w/2,startY=h, tx=random(0,w), ty=random(0,h/3);
         fireworks.push(new Firework(startX,startY,tx,ty));
     }
@@ -209,16 +212,19 @@ surpriseBtn.addEventListener('click',()=>{
 
     // Tambah long text baru
     const newText=[
-        "Aku cuma mau bilang, kamu itu luar biasa dan selalu bikin aku bahagia setiap hari.",
-        "Semoga kita selalu bisa bersama, tertawa dan saling mendukung sepanjang waktu.",
-        "Aku sayang kamu, dan semoga ulang tahunmu kali ini jadi yang terbaik!"
+    "Cukup jaringan aja yang hilang, kamu jangan yaaaa.\n",
+    "keberadaanmu bagaikan secangkir kopi yang aku butuhkan setiap pagi, yang dapat mendorongku untuk tetap bersemangat menjalani hari.\n",
+    "Aku mau banget ngasih dunia ke kamu. Tapi karena itu nggak mungkin, maka aku akan kasih hal yang paling penting dalam hidupku, yaitu duniaku.\n",
+    "kamuu tauu gaaa?? apaaa yangg akuu mauu?\n",
+    "akuuuu tuhhh mauuu nyaaa kamuuu jadii myy binii lohhh bangettt malaah hehe tungguu yaa tungguu akuu bawaa cincinn whehhe\n",
+    "𝗦𝗔𝗠𝗔𝗔 𝗔𝗝𝗔𝗔𝗔 𝗚𝗔𝗥𝗜𝗡𝗚𝗚𝗚 𝗔𝗡𝗝𝗔𝗬𝗬"
     ];
     newText.forEach(line=>{
         typingText.innerHTML+="\n"+line;
         typingText.parentElement.scrollTop=typingText.parentElement.scrollHeight;
     });
 
-    setTimeout(()=>{window.location.href="https://wa.me/6285779083591"},3000);
+    setTimeout(()=>{window.location.href="https://wa.me/6285779083591?text=GASSS+SAYAAANGGG+AYOOO+CIVOKANN+KITAAA+MAUU+PAPP+ITUUU+GAKKK?"},5000);
 });
 </script>
 </body>
